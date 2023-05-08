@@ -1,0 +1,60 @@
+*, *::before, *::after {
+  margin : 0;
+  padding : 0;
+  box-sizing : border-box;
+  transition : all 0.25s;
+}
+
+body {
+  min-height : 100vh;
+  background : black url(../img/bg.jpg) no-repeat 50% 50%;
+  background-size : cover;
+  background-attachment: fixed;
+  font-family: 'Lato', sans-serif;
+}
+
+/*Page d'accueil*/
+
+.homeContainer {
+    margin: 5rem;
+    min-height : 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.difficulty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    color: white;
+    margin-bottom: 5rem;
+    font-family: 'Lato', sans-serif;
+    font-size : 3rem;
+}
+
+.button {
+  font-size : 1rem;
+  font-weight: bolder;
+  letter-spacing : 1px;
+  width : 150px;
+  height : 75px;
+  border : none;
+  cursor : pointer;
+  border-radius: 5rem;
+  background-color: #FBE8B6;
+}
+
+.button:hover {
+    background-color: #F9D26C;
+}
+
+/*Balises à action unique*/
+
+.thinMarginLeft {
+    margin-left: 3rem;
+}
