@@ -15,10 +15,6 @@ body {
 
 /*Page d'accueil*/
 
-main {
-  min-height: ;
-}
-
 #homeContainer {
   min-height : 100vh;
   display: flex;
