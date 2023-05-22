@@ -8,7 +8,6 @@
         <meta name="author" content="Lucie DUMAS, Lucas OZDEMIR">
         <!-- Une petite description du site -->
         <meta name="description" content="Mini-jeu de Sutom">
-        <link rel="icon" href="assets\img\favicon.ico" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
@@ -18,51 +17,60 @@
     <body>
         <main>
             <div id="homeContainer">
-                <h1 class="title">futur logo</h1>
+                <h1 class="logo">SUTOM</h1>
                 <h1 class="title">Choisissez le nombre de lettres de votre mot :</h1>
                 <!-- Choix du nombre de lettres -->
                 <div class="difficulty">
-                    <button id="6" class="button">6</button>
-                    <button id="7" class="button thinMarginLeft">7</button>
-                    <button id="8" class="button thinMarginLeft">8</button>
+                    <button id="button6" class="button">6</button>
+                    <button id="button7" class="button thinMarginLeft">7</button>
+                    <button id="button8" class="button thinMarginLeft">8</button>
                 </div>
             </div>
+
+            <div id="rules">
+                <div class="ruleContent">
+                    <h1 class="ruleTitle">Les règles du jeu :</h1>
+                    <p>Vous disposez de six tentatives pour deviner le mot qui se compose de six à huit lettres.
+                    <br>
+                    Vous ne pouvez proposer que des mots débutant par la même lettre que le mot recherché.
+                    <br>
+                    Les noms propres et les caracactères spéciaux ne sont pas autorisés.
+                    <br>
+                    Les lettres entourées d'un carré vert sont bien placées.
+                    <br>
+                    Les lettres entourées d'un carré jaune sont mal placées (mais présentes dans le mot).
+                    <br>
+                    Les lettres entourées d'un carré gris ne sont pas dans le mot.</p>
+
+                    <button class="button" id="consent">J'ai compris !</button>
+                </div>
+            </div>
+
             <div id="game-board">
-                <div id="keyboard-cont">
-                    <div class="first-row">
-                        <button class="keyboard-button">a</button>
-                        <button class="keyboard-button">z</button>
-                        <button class="keyboard-button">e</button>
-                        <button class="keyboard-button">r</button>
-                        <button class="keyboard-button">t</button>
-                        <button class="keyboard-button">y</button>
-                        <button class="keyboard-button">u</button>
-                        <button class="keyboard-button">i</button>
-                        <button class="keyboard-button">o</button>
-                        <button class="keyboard-button">p</button>
+                <div class="jeu">
+                    <div>
+                        <button class="logo" id="logo">SUTOM</button>
                     </div>
-                    <div class="second-row">
-                        <button class="keyboard-button">q</button>
-                        <button class="keyboard-button">s</button>
-                        <button class="keyboard-button">d</button>
-                        <button class="keyboard-button">f</button>
-                        <button class="keyboard-button">g</button>
-                        <button class="keyboard-button">h</button>
-                        <button class="keyboard-button">j</button>
-                        <button class="keyboard-button">k</button>
-                        <button class="keyboard-button">l</button>
-                        <button class="keyboard-button">m</button>
+
+                    <div id="grille">
+
                     </div>
-                    <div class="third-row">
-                        <button class="keyboard-button">Del</button>
-                        <button class="keyboard-button">w</button>
-                        <button class="keyboard-button">x</button>
-                        <button class="keyboard-button">c</button>
-                        <button class="keyboard-button">v</button>
-                        <button class="keyboard-button">b</button>
-                        <button class="keyboard-button">n</button>
-                        <button class="keyboard-button">Enter</button>
-                    </div>
+                </div>
+            </div>            
+
+            <div id="win">
+                <h1 class="title">Super. Vous avez gagné. Incroyable...</h1>
+                <img src="assets/img/mario_win.gif" class="borderRadius">
+                <div class="buttonContainer">
+                    <button class="button thinMarginLeft" id="home">Menu Principal</button>
+                </div>
+            </div>
+
+            <div id="lose">
+                <h1 class="title">Aïe... Dommage... Ça s'est joué à pas grand chose hein...</h1>
+                <img src="assets/img/aie-coup-dur-pour-pour-guillaume.gif" class="borderRadius">
+                <div class="buttonContainer">
+                    <button class="button thinMarginLeft" id="reload">Menu Principal</button>
                 </div>
             </div>
         </main>

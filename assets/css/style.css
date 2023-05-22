@@ -24,16 +24,31 @@ body {
 }
 
 .difficulty {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo {
+  font-size: 5rem;
+  transform: rotate(5deg);
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin-bottom: 10rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  background : white url(../img/button_bg.jpg) no-repeat 50% 50%;
+}
+
+.logo:hover {
+  transform: rotate(0deg);
 }
 
 .title {
-    color: white;
-    margin-bottom: 5rem;
-    font-family: 'Lato', sans-serif;
-    font-size : 3rem;
+  color: white;
+  margin-bottom: 5rem;
+  font-family: 'Lato', sans-serif;
+  font-size : 3rem;
 }
 
 .button {
@@ -49,41 +64,121 @@ body {
 }
 
 .button:hover {
-    background-color: #F9D26C;
+  background-color: #F9D26C;
 }
 
 #game-board {
   display: none;
 }
 
-/*Clavier*/
+/*Jeu*/
 
-#keyboard-cont {
-  margin: 1rem 0;
+.jeu {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#rules {
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.ruleTitle {
+  margin-bottom: 3rem;
+}
+
+.ruleContent {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
+  background : white url(../img/button_bg.jpg) no-repeat 50% 50%;
+  height: 100vh;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+  font-weight: bolder;
+  font-size: 2rem;
 }
 
-#keyboard-cont div {
+#consent {
+  margin-top: 3rem;
+}
+
+/*Grille*/
+
+#grille {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.letter-box {
+  background : white url(../img/button_bg.jpg) no-repeat 50% 50%;
+  border-radius: 3px;
+  margin: 2px;
+  font-size: 2.5rem;
+  font-weight: 700;
+  height: 3rem;
+  width: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+.filled-box {
+  border: 2px solid black;
+}
+
+.letter-row {
   display: flex;
 }
 
-.second-row {
-  margin: 0.5rem 0;
+.yellowLetter {
+ background-color: yellow;
+ background-image: none;
+ opacity: 0.8;
 }
 
-.keyboard-button {
-  font-size: 1rem;
-  font-weight: 700;
-  padding: 0.5rem;
-  margin: 0 2px;
-  cursor: pointer;
-  text-transform: uppercase;
+.greenLetter {
+  background-color: green;
+  background-image: none;
+  opacity: 0.8;
+}
+
+.greyLetter {
+  background-color: grey;
+  background-image: none;
+  opacity: 0.8;
+}
+
+/*Ecran de victoire et de défaite*/
+
+#win, #lose {
+  height : 100vh;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.buttonContainer {
+  margin-top: 5rem;
 }
 
 /*Balises à action unique*/
 
 .thinMarginLeft {
-    margin-left: 3rem;
+  margin-left: 3rem;
+}
+
+.borderRadius {
+  border-radius: 3rem;
 }
